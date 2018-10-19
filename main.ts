@@ -1,11 +1,13 @@
 import {Server} from './src/config/server'
 
-import {establishmentRouter} from './src/components/establishments/establishment.routes'
+import {establishmentsRouter} from './src/components/establishments/establishments.routes'
+import {reviewsRouter} from './src/components/reviews/reviews.router'
 
 const server = new Server()
 
 server.bootstrap([
-    establishmentRouter
+    establishmentsRouter,
+    reviewsRouter
 ])
 .then(server => {
     console.log('Server is listening on: ', server.application.address())

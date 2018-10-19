@@ -1,7 +1,7 @@
 import * as restify from 'restify'
 
 import {ModelRouter} from '../../common/model-router'
-import {Establishment} from './establishment.model'
+import {Establishment} from './establishments.model'
 
 class EstablishmentsRouter extends ModelRouter<Establishment> {
     constructor(){
@@ -18,4 +18,4 @@ class EstablishmentsRouter extends ModelRouter<Establishment> {
     }
 }
 
-export const establishmentRouter = new EstablishmentsRouter()
+export const establishmentsRouter = new EstablishmentsRouter()
