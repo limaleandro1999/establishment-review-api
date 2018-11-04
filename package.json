@@ -2,12 +2,14 @@
   "name": "establishment-review-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
-    "start": "nodemon dist/main.js",
-    "build": "tsc",
-    "postinstall": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-ts": "tsc",
+    "postinstall": "npm run build-ts",
+    "start": "npm run server",
+    "server": "node dist/main.js",
+    "watch-node": "nodemon dist/main.js",
+    "watch-ts": "tsc -w"
   },
   "keywords": [],
   "author": "Leandro Lima",
