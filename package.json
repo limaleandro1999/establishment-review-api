@@ -16,7 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "mongoose": "4.13.9",
-    "restify": "6.3.4"
+    "restify": "6.3.4",
+    "typescript": "^3.1.6"
   },
   "devDependencies": {
     "@types/mongoose": "4.7.32",
